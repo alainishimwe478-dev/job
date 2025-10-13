@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Tea Rwanda - Application Form</title>
+    <style>
+        :root {
+            --primary-color: #556B2F;
+            --secondary-color: #A9B28D;
+            --accent-color: #D2B48C;
+            --text-color-dark: #333;
+            --text-color-light: #fff;
+            --background-dark: rgba(0, 0, 0, 0.65);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: var(--text-color-dark);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            text-align: center;
+            color: var(--text-color-light);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: var(--text-color-light);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 15px;
+            background-color: var(--accent-color);
+            color: var(--text-color-dark);
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c4a17b;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                margin: 20px;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mountain Tea Rwanda</h1>
+</header>
+
+<div class="form-container">
+    <h2>Application Form</h2>
+    <form action="submit_application.php" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="position">Position Applying For</label>
+        <select id="position" name="position" required>
+            <option value="">--Select Position--</option>
+            <option value="farm_worker">Farm Worker</option>
+            <option value="processing_staff">Processing Staff</option>
+            <option value="quality_control">Quality Control</option>
+            <option value="sales_marketing">Sales & Marketing</option>
+            <option value="admin">Administration</option>
+        </select>
+
+        <label for="experience">Experience / Qualifications</label>
+        <textarea id="experience" name="experience" rows="5" placeholder="Briefly describe your experience..." required></textarea>
+
+        <label for="resume">Upload Resume (PDF only)</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>

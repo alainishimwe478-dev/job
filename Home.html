@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Tea Rwanda - Home</title>
+    <style>
+        :root {
+            --primary-color: #556B2F; /* Dark olive green */
+            --secondary-color: #A9B28D; /* Lighter, earthy green */
+            --accent-color: #D2B48C; /* Warm, tan color */
+            --text-color-dark: #333;
+            --text-color-light: #fff;
+            --background-dark: rgba(0, 0, 0, 0.65);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: var(--text-color-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background-image: url('m.jpg'); /* Replace with a high-quality photo of Rwandan tea hills */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-color-light);
+        }
+        
+        .hero-content {
+            background-color: var(--background-dark);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin: 0 0 10px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color-dark);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c4a17b;
+            transform: translateY(-2px);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo h3 {
+            margin: 0;
+            color: var(--text-color-light);
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .main-nav a {
+            color: var(--text-color-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .main-nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .search-bar {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .search-bar input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--accent-color);
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .section.dark {
+            background-color: var(--secondary-color);
+            color: var(--text-color-light);
+        }
+        
+        .content-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: var(--text-color-light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 350px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .testimonial p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .testimonial span {
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-content">
+            <img src="eee.png" alt="Mountain Tea Rwanda Logo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
+            <h1>Nsapgi's company</h1>
+            <p>Sourced from the heart of Africa's thousand hills. <br>Taste the difference altitude makes.</p>
+            <a href="nsapgi5.html" class="cta-button">Explore Our Teas</a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="eee.png" alt="Logo">
+                <h3>Nsapgi's company</h3>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                   <li style="list-style: none;"><a href="Home.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Home</a></li>
+            <li style="list-style: none;"><a href="nsapgi5.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">products</a></li>
+            <li style="list-style: none;"><a href="page 3.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Contact</a></li>
+            <li style="list-style: none;"><a href="page4.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">infos</a></li>
+            <li style="list-style: none;"><a href="services.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">services</a></li>
+            <li style="list-style: none;"><a href="login.php" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">login</a></li>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for tea...">
+                <button type="button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="story">
+            <div class="container">
+                <h2>The Mountain Tea Difference</h2>
+                <p>Grown in the rich, volcanic soil of Rwanda's high-altitude mountains, our tea leaves develop a complex and robust flavor profile unlike any other. We partner with local farmers to ensure fair trade practices and sustainable farming, bringing you a cup of tea that is as ethical as it is delicious.</p>
+                <h2>Connecting Farmers to the World</h2>
+            <div class="content-grid">
+                <div class="card">
+                    <img src="i.jpg" alt="Tea Plantation">
+                    <h3>High-Quality Production</h3>
+                    <p>We work with farmers and factories across Rwanda, like Gisovu and Kitabi, to ensure our teas meet the highest standards of quality, flavor, and aroma.</p>
+                     <img src="xx.jpg" alt="Shipping tea overseas">
+    <h3>Responsible Tea Exportation</h3>
+    <p>Our commitment to ethical practices extends beyond our farms and into the global market through responsible tea exportation. By managing a direct-trade process, we ensure fair prices and transparency for our farmers, empowering their communities and supporting their livelihoods. Our export operations are built on a foundation of quality control and efficiency, allowing us to deliver the finest Rwandan tea to customers worldwide while upholding the environmental and social standards that define our brand. This not only builds a reputation for superior tea but also for a business that truly makes a positive impact, from the hills of Rwanda to your cup.</p>
+                </div>
+                <div class="card">
+                    <img src="h.jpg" alt="Tea Harvesting">
+                    <h3>Sustainable Partnership</h3>
+                    <p>Our business is built on a foundation of ethical practices and community empowerment. We invest in local communities and uphold environmentally-friendly farming methods.</p>
+                    <img src="g.jpg" alt="Tea Products">
+                    <h3>Global Exportation</h3>
+                    <p>We manage the entire process, from farm to factory to your cup, offering seamless exportation of premium black and green orthodox teas to the global market.</p>
+                    <div class="card">
+</div>
+
+            </div>
+        </section>
+
+        <section class="section dark" id="featured-products">
+            <div class="container">
+                <h2>Our Featured Teas</h2>
+                <div class="content-grid">
+                    <div class="card">
+                        <img src="dd.jpg" alt="Product Image">
+                        <h3>Black Orthodox Tea</h3>
+                        <p>A full-bodied black tea with woody and malty notes, perfect for a morning boost.</p>
+                        <a href="#" class="cta-button">Shop Now</a>
+                    </div>
+                    <div class="card">
+                        <img src="ee.jpg" alt="Product Image">
+                        <h3>Organic Green Tea</h3>
+                        <p>A fresh, delicate green tea with subtle sweetness and a clean finish.</p>
+                        <a href="#" class="cta-button">Shop Now</a>
+                    </div>
+                    <div class="card">
+                        <img src="cham.jpg" alt="Product Image">
+                        <h3>Ginger & Lemon Infusion</h3>
+                        <p>Our popular spiced tea, combining the warmth of ginger with a zesty lemon twist.</p>
+                        <a href="#" class="cta-button">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="content-grid">
+                    <div class="card testimonial">
+                        <p>"This tea is simply incredible. The flavor is so rich and a perfect start to my day. I love supporting a brand that values sustainability."</p>
+                        <span>— Jane D.</span>
+                    </div>
+                    <div class="card testimonial">
+                        <p>"The best tea I've ever tasted! You can truly feel the care that goes into every single leaf."</p>
+                        <span>— Peter K.</span>
+                    </div>
+                    <div class="card testimonial">
+                        <p>"Fast shipping and a high-quality product. The aroma and taste are unmatched. Highly recommend!"</p>
+                        <span>— Sarah T.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mountain Tea Rwanda. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

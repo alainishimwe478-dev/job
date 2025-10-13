@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nsapgi's company - Services</title>
+    <style>
+        :root {
+            --primary-color: #556B2F; /* Dark olive green */
+            --secondary-color: #A9B28D; /* Lighter, earthy green */
+            --accent-color: #D2B48C; /* Warm, tan color */
+            --text-color-dark: #333;
+            --text-color-light: #fff;
+            --background-dark: rgba(0, 0, 0, 0.65);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: var(--text-color-dark);
+            line-height: 1.6;
+            background-image: url('m.jpg'); /* Background image from your previous code */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo h3 {
+            margin: 0;
+            color: var(--text-color-light);
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .main-nav a {
+            color: var(--text-color-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .main-nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .search-bar {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .search-bar input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--accent-color);
+            cursor: pointer;
+        }
+
+        main {
+            background-color: var(--background-dark); /* Using the dark overlay from the original code */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px; 
+            border-radius: 8px;
+            color: var(--text-color-light); /* Setting text color to light for readability */
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .page-title h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .service-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 20px;
+        }
+        .service-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 20px;
+        }
+        .service-item img {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .service-item:nth-child(even) {
+            flex-direction: row-reverse; /* Alternate the layout for visual interest */
+        }
+        .service-content {
+            flex-grow: 1;
+        }
+        .service-content h2 {
+            margin-top: 0;
+            font-size: 2em;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .page-title h1 {
+                font-size: 2.5em;
+            }
+            .service-item {
+                flex-direction: column;
+            }
+            .service-item:nth-child(even) {
+                flex-direction: column;
+            }
+            .service-item img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+    <div class="container header-content">
+        <div class="logo">
+            <a href="Home.html">
+                <img src="eee.png" alt="Nsapgi's company Logo">
+                <h3>Nsapgi's company</h3>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="nsapgi5.html">Our products</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="page 3.html">Contact</a></li>
+                <li><a href="page4.html">Infos</a></li>
+                <li><a href="Log in.html">Log in</a></li>
+                <li><a href="app.html">Application</a></li>
+>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+            </div>
+            <nav class="main-nav">
+                <ul></nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for tea...">
+                <button type="button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title">
+        <img src="eee.png" alt="Company Logo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
+        <h1>OUR SERVICES</h1>
+        <p>Explore the services we offer for our partners and customers.</p>
+    </div>
+
+    <main>
+        <div class="service-container">
+            <div class="service-item">
+                <img src="oo.jpg" alt="Tea Exportation">
+                <div class="service-content">
+                    <h2>Tea Exportation and Logistics</h2>
+                    <p>Our commitment to ethical practices extends beyond our farms and into the global market through responsible tea exportation. We manage a direct-trade process, ensuring fair prices and transparency for our farmers while efficiently delivering the finest Rwandan tea to customers worldwide.</p>
+                </div>
+            </div>
+            
+            <div class="service-item">
+                <img src="pp.jpg" alt="Tea farmers in Rwanda">
+                <div class="service-content">
+                    <h2>Community Partnerships</h2>
+                    <p>We work directly with tea farmers across Rwanda, offering training, resources, and fair compensation. Our partnerships improve cultivation techniques, increase yields, and ensure the highest quality tea leaves are produced for a sustainable future.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-content">
+                    <h2>Quality Assurance</h2>
+                    <p>Every batch of our tea undergoes a rigorous quality assurance process. From the moment the leaves are harvested to their final packaging, we guarantee our products meet the highest standards of taste, aroma, and safety.</p>
+                </div>
+                <!-- You can add an image here if you wish -->
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nsapgi's company</p>
+    </footer>
+
+</body>
+</html>
+)

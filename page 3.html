@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nsapgi's company - Contact</title>
+    <style>
+        :root {
+            --primary-color: #556B2F; /* Dark olive green */
+            --secondary-color: #A9B28D; /* Lighter, earthy green */
+            --accent-color: #D2B48C; /* Warm, tan color */
+            --text-color-dark: #333;
+            --text-color-light: #fff;
+            --background-dark: rgba(0, 0, 0, 0.65);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: var(--text-color-dark);
+            line-height: 1.6;
+            background-image: url('m.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo h3 {
+            margin: 0;
+            color: var(--text-color-light);
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .main-nav a {
+            color: var(--text-color-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .main-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            background-color: var(--background-dark);
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 900px; 
+            border-radius: 8px;
+            color: var(--text-color-light);
+            text-align: center;
+        }
+        
+        .page-title h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info, .contact-form-container {
+            width: 100%;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-color-light);
+        }
+        
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .contact-form button {
+            padding: 12px 25px;
+            background-color: var(--accent-color);
+            color: var(--text-color-dark);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-form button:hover {
+            background-color: #c4a17b;
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+            font-size: 2em;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 40px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact-content {
+                flex-direction: column;
+            }
+            .contact-info, .contact-form-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="eee.png" alt="Nsapgi's company Logo">
+                    <h3>Nsapgi's company</h3>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li style="list-style: none;"><a href="Home.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Home
+            <li style="list-style: none;"><a href="nsapgi5.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">products</a></li>
+            <li style="list-style: none;"><a href="page3.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Contact</a></li>
+            <li style="list-style: none;"><a href="page4.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">infos</a></li>
+            <li style="list-style: none;"><a href="services.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">services</a></li>
+            <li style="list-style: none;"><a href="login.html" style="background-color: black; color: white; border: 1px solid black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">login</a></li>
+             
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Fill out the form below or find our contact information.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <form class="contact-form" action="#" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Names" required>
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Our Information</h2>
+                <p><strong>Head Office:</strong></p>
+                <p>KG 549 St, Kigali, Rwanda</p>
+                <p><strong>Email:</strong></p>
+                <p>contact@nsapgistea.com</p>
+                <p><strong>Phone:</strong></p>
+                <p>+250 781896339</p>
+                <p><strong>Follow Us:</strong></p>
+                <!-- Add social media links here -->
+                <a href="#"><img src="feb.png" alt="Facebook" style="width:30px; margin-right:10px;"></a>
+                <a href="#"><img src="ig.png" alt="Instagram" style="width:30px;"></a>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <!-- Replace with your actual Google Maps embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.525547076046!2d30.05834921475512!3d-1.954704337774902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d5cb2e5d79b291%3A0x6b53a0670868f0c5!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2sus!4v1628174577180!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nsapgi's company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
